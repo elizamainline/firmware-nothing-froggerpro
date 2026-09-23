@@ -1,0 +1,87 @@
+{
+  "config": {
+     "hw_platform": ["MTP", "RCM", "Surf", "HDK", "QRD"],
+     "soc_id": ["655", "681", "694"]
+  },
+  "ois1_manager_0_platform":{
+      "owner": "ois_dual",
+      ".fac_cal": {
+      "owner": "ois_dual",
+      "x":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "y":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "z":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      }
+    }
+  },
+  "ois2_manager_0_platform":{
+    "owner": "ois_dual",
+    ".config":{
+      "owner": "ois_dual",
+      "param0":{ "type": "flt", "ver": "6",
+        "data": "88.0"
+      },
+      "param1":{ "type": "flt", "ver": "6",
+        "data": "800.0"
+      },
+      "param2":{ "type": "flt", "ver": "6",
+        "data": "1000.0"
+      },
+      "param3":{ "type": "flt", "ver": "6",
+        "data": "112.0"
+      },
+      "param4":{ "type": "flt", "ver": "6",
+        "data": "113.0"
+      },
+      "param5":{ "type": "flt", "ver": "6",
+        "data": "47.0"
+      },
+      "param6":{ "type": "flt", "ver": "6",
+        "data": "41.0"
+      },
+      "param7":{ "type": "flt", "ver": "6",
+        "data": "0.0"
+      },
+      "param8":{ "type": "flt", "ver": "6",
+        "data": "0.0"
+      },
+      "param9":{ "type": "flt", "ver": "6",
+        "data": "200.0"
+      },
+      "param10":{ "type": "flt", "ver": "6",
+        "data": "0.2"
+      },
+      "param11":{ "type": "flt", "ver": "6",
+        "data": "0.0"
+      },
+      "param12":{ "type": "flt", "ver": "6",
+        "data": "0.0"
+      },
+      "param13":{ "type": "flt", "ver": "6",
+        "data": "1.0"
+      },
+      "param14":{ "type": "flt", "ver": "6",
+        "data": "1.0"
+      },
+      "param15":{ "type": "flt", "ver": "7",
+        "data": "500.0"
+      }
+    },
+    ".fac_cal": {
+      "owner": "ois_dual",
+      "x":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "y":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "z":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      }
+    }
+  }
+}

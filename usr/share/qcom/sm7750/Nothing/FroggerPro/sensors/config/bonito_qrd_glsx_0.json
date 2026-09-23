@@ -1,0 +1,204 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Surf", "RCM", "QRD"],
+    "soc_id": ["655", "536", "530"]
+  },
+  "glsx":{
+    "owner": "sns_glsx",
+    ".als":{
+      "owner": "sns_glsx",
+      ".config":{
+        "owner": "sns_glsx",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  },
+  "glsx_platform":{
+    "owner": "sns_glsx",
+    ".config":{
+      "owner": "sns_glsx",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "49"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "1",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "1",
+        "data": "400"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "117"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vdd"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".misc_info":{
+      "owner": "sns_glsx",
+        "reserved0":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved1":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "fac_ps_3cm_th":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "fac_ps_base":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "fac_ps_5cm_th":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved5":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved6":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved7":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved8":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved9":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved10":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved11":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved12":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved13":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved14":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved15":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved16":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved17":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved18":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved19":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved20":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved21":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved22":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved23":{ "type": "flt", "ver": "0",
+          "data": "0"
+        }
+    },
+    ".als_fac_cal":{
+      "owner": "sns_glsx",
+      ".cali_params":{
+        "owner": "sns_glsx",
+        "sensor_uid":{ "type": "str", "ver": "0",
+            "data": "01234567890ABCDEF"
+        },
+        "darkbase":{ "type": "str", "ver": "0",
+            "data": "01234567890ABCDEF"
+        },
+        "sensor_cfg":{ "type": "str", "ver": "0",
+            "data": "01234567890ABCDEF"
+        },
+        "rawdata":{ "type": "str", "ver": "0",
+            "data": "01234567890ABCDEF"
+        },
+        "als_cali":{ "type": "str", "ver": "0",
+        "data": "01234567890ABCDEF"
+        },
+        "param_part1":{ "type": "str", "ver": "0",
+            "data": "01234567890ABCDEF"
+        },
+        "param_part2":{ "type": "str", "ver": "0",
+            "data": "01234567890ABCDEF"
+        },
+        "param_part3":{ "type": "str", "ver": "0",
+            "data": "01234567890ABCDEF"
+        },
+        "param_part4":{ "type": "str", "ver": "0",
+            "data": "01234567890ABCDEF"
+        },
+        "param_part5":{ "type": "str", "ver": "0",
+            "data": "01234567890ABCDEF"
+        }
+      }
+    },
+    ".ps_fac_cal":{
+      "owner": "sns_glsx",
+      ".cali_params":{
+        "owner": "sns_glsx",
+        "base":{ "type": "str", "ver": "0",
+            "data": "01234567890ABCDEF"
+        },
+        "learn_base":{ "type": "str", "ver": "0",
+            "data": "01234567890ABCDEF"
+        }
+      }
+    }
+  }
+}
