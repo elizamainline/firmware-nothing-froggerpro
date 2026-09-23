@@ -51,6 +51,7 @@ install_tree() {
 	esac
 	mkdir -p "$(dirname "$dest")"
 	cp -a "$builddir/$1" "$dest"
+	find "$dest" -type d -exec chmod 0755 {} +
 	find "$dest" -type f -exec chmod 0644 {} +
 }
 
