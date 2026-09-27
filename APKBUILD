@@ -2,7 +2,7 @@
 maintainer="Oleksii Onchul <oleksiionchul@gmail.com>"
 pkgname=firmware-nothing-froggerpro
 pkgver=20260723
-pkgrel=0
+pkgrel=1
 pkgdesc="Firmware for the Nothing Phone (4a) Pro"
 url="https://github.com/elizamainline/firmware-nothing-froggerpro"
 arch="aarch64"
@@ -21,7 +21,7 @@ subpackages="
 	$pkgname-vpu
 	$pkgname-wpss
 "
-_commit="0c71e8293d53bd50674c28001a79e4c49d334cf8"
+_commit="1a18ecab8d17a9f760e3eed4c3356763d058f343"
 _fwdir="lib/firmware/qcom/sm7750/nothing/froggerpro"
 _sharedir="usr/share/qcom/sm7750/Nothing/FroggerPro"
 source="$pkgname-$_commit.tar.gz::$url/archive/$_commit.tar.gz"
@@ -61,7 +61,16 @@ adreno() {
 		"$_fwdir/gen70900_aqe.fw" \
 		"$_fwdir/gen70900_sqe.fw" \
 		"$_fwdir/gen70900_zap.mbn" \
-		"$_fwdir/gmu_gen70900.bin"
+		"$_fwdir/gmu_gen70900.bin" \
+		"$_fwdir/gen70e00_sqe.fw" \
+		"$_fwdir/gen70e00_zap.mbn" \
+		"$_fwdir/gen71700_gmu.bin"
+
+	# The DRM driver requests SQE and GMU firmware from qcom/ directly.
+	ln -s "sm7750/nothing/froggerpro/gen70e00_sqe.fw" \
+		"$subpkgdir/usr/lib/firmware/qcom/gen70e00_sqe.fw"
+	ln -s "sm7750/nothing/froggerpro/gen71700_gmu.bin" \
+		"$subpkgdir/usr/lib/firmware/qcom/gen71700_gmu.bin"
 }
 
 adsp() {
@@ -133,5 +142,5 @@ wpss() {
 }
 
 sha512sums="
-SKIP  firmware-nothing-froggerpro-0c71e8293d53bd50674c28001a79e4c49d334cf8.tar.gz
+SKIP  firmware-nothing-froggerpro-1a18ecab8d17a9f760e3eed4c3356763d058f343.tar.gz
 "
