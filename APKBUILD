@@ -2,7 +2,7 @@
 maintainer="Oleksii Onchul <oleksiionchul@gmail.com>"
 pkgname=firmware-nothing-froggerpro
 pkgver=20260723
-pkgrel=1
+pkgrel=2
 pkgdesc="Firmware for the Nothing Phone (4a) Pro"
 url="https://github.com/elizamainline/firmware-nothing-froggerpro"
 arch="aarch64"
@@ -11,6 +11,7 @@ options="!check !strip !archcheck !tracedeps pmb:cross-native"
 subpackages="
 	$pkgname-adreno
 	$pkgname-adsp
+	$pkgname-amplifiers
 	$pkgname-audio
 	$pkgname-bluetooth
 	$pkgname-cdsp
@@ -21,7 +22,7 @@ subpackages="
 	$pkgname-vpu
 	$pkgname-wpss
 "
-_commit="1a18ecab8d17a9f760e3eed4c3356763d058f343"
+_commit="2144903cf7ded8fd512fd4ea047c710511ffb461"
 _fwdir="lib/firmware/qcom/sm7750/nothing/froggerpro"
 _sharedir="usr/share/qcom/sm7750/Nothing/FroggerPro"
 source="$pkgname-$_commit.tar.gz::$url/archive/$_commit.tar.gz"
@@ -84,6 +85,11 @@ adsp() {
 		"$_fwdir/battmgr.jsn"
 }
 
+amplifiers() {
+	pkgdesc="Speaker amplifier firmware for the Nothing Phone (4a) Pro"
+	install_files "$_fwdir/aw882xx_acf.bin"
+}
+
 audio() {
 	pkgdesc="Audio calibration data for the Nothing Phone (4a) Pro"
 	install_tree "$_sharedir/acdb"
@@ -142,5 +148,5 @@ wpss() {
 }
 
 sha512sums="
-SKIP  firmware-nothing-froggerpro-1a18ecab8d17a9f760e3eed4c3356763d058f343.tar.gz
+SKIP  firmware-nothing-froggerpro-2144903cf7ded8fd512fd4ea047c710511ffb461.tar.gz
 "
