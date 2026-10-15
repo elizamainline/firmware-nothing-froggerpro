@@ -2,7 +2,7 @@
 maintainer="Oleksii Onchul <oleksiionchul@gmail.com>"
 pkgname=firmware-nothing-froggerpro
 pkgver=20260723
-pkgrel=2
+pkgrel=3
 pkgdesc="Firmware for the Nothing Phone (4a) Pro"
 url="https://github.com/elizamainline/firmware-nothing-froggerpro"
 arch="aarch64"
@@ -22,7 +22,7 @@ subpackages="
 	$pkgname-vpu
 	$pkgname-wpss
 "
-_commit="2144903cf7ded8fd512fd4ea047c710511ffb461"
+_commit="cbecef6b0e8a67588d8f3e2c2f9de6f6d4e3fc08"
 _fwdir="lib/firmware/qcom/sm7750/nothing/froggerpro"
 _sharedir="usr/share/qcom/sm7750/Nothing/FroggerPro"
 source="$pkgname-$_commit.tar.gz::$url/archive/$_commit.tar.gz"
@@ -145,8 +145,9 @@ vpu() {
 wpss() {
 	pkgdesc="QCA6750 WPSS and WLAN firmware for the Nothing Phone (4a) Pro"
 	install_tree "lib/firmware/qca6750"
+	install_tree "lib/firmware/updates/ath11k"
 }
 
 sha512sums="
-SKIP  firmware-nothing-froggerpro-2144903cf7ded8fd512fd4ea047c710511ffb461.tar.gz
+SKIP  firmware-nothing-froggerpro-cbecef6b0e8a67588d8f3e2c2f9de6f6d4e3fc08.tar.gz
 "
